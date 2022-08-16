@@ -21,15 +21,26 @@ main {
     background-color: #F3F3F3;
     padding: 20px 10px 10px 10px;
     border-radius: 20px;
-    width: 800px;
+    width: 45vw;
+    height: 80vh;
    
 }
-main > form{
-   
+h3{
     text-align: center;
+}
+main > form{
+    
+    
+    text-align: right;
     padding: 20px;
     margin: 20px;
 
+}
+.master-name {
+    padding-bottom: 20px;
+}
+.master-range {
+    display: inline-block;
 }
 .ladels{
     display: inline-block;

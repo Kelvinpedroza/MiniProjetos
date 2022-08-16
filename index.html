@@ -12,24 +12,31 @@
     <main>
         <h3>Conte-nos algo positivo que aconteceu com você hoje </h3>
         <form action="" method="get" autocomplete="on">
-            <div class="labels">
-                <label for="inome">Nome</label> 
-                <div class="fields">
-                    <input type="text" id="inome" name="nome" placeholder="Entre com seu Nome" required>
+           
+                <div class="master-name">
+                    <div class="labels">
+                        <label for="inome">Nome</label>
+                        <div class="fields">
+                            <input type="text" id="inome" name="nome" placeholder="Entre com seu Nome" required>
+                        </div>
+                    </div>
+                </div>
+                <div class="master-name">
+                    <div class="labels">
+                        <label for="iemail" id="iemail"> Email</label>
+                        <div class="fields">
+                            <input type="email" name="iemail" id="iemail" placeholder="Entre com seu Email" required>
+                        </div>
                 </div>
             </div>
-            <div class="labels">
-                <label for="iemail" id="iemail"> Email</label>
-                <div class="fields">
-                    <input type="email" name="iemail" id="iemail" placeholder="Entre com seu Email" required>
+            
+                <div class="labels">
+                    <label for="irange" name="irange" id="irangee">Em uma escala de 1 a 10, quão bom foi ?</label>
+                    <div class="fields">
+                       <input type="number" name="irange" id="irange" min="0" max="10">
+                    </div>
                 </div>
-            </div>
-            <div class="labels">
-                <label for="irange" name="irange" id="irangee">Em uma escala de 1 a 10, quão bom foi ?</label>
-                <div class="fields">
-                   <input type="number" name="irange" id="irange" min="0" max="10">
-                </div>
-            </div>
+            
             <div class="form-rows">
                 <div class="labels">
                     <label for="dropdown" id="dropdown-label">Onde isso aconteceu ?</label>                    
@@ -71,18 +78,47 @@
                   </ul>      
                 </div>
             </div>
-
-           
-       
-
-            <p>
-                <label for="emotion" name="iemotion" id="iemotion">Que emoções você expreimentou? <br>(Selecione tudo que se aplica)</label>
-                <input type="checkbox" name="eanina" id="ianina"><label for="ianima">Animado</label>
-                <input type="checkbox" name="ehumi" id="ihumi"><label for="ihumi">Humilhado</label>
-                <input type="checkbox" name="exalt" id="iexalt"><label for="iexalt">Exaltado</label>
-                <input type="checkbox" name="elove" id="ilove"><label for="ilove">Amado</label>
-                <input type="checkbox" name="entus" id="ientus"><label for="ientus">Entusiasmado</label>
-            </p>
+            <div class="form-rows">
+                <div class="ladels">
+                    <label for="feelings">
+                        Qual emoção você exprementou ?<br> (Selecione todas que exprementou)
+                    </label>
+                </div>
+                <div class="fields">
+                    <ul id="feelings" style="list-style:none ;">
+                        <li class="radio">
+                            <label>
+                                <input type="checkbox"
+                                name="feeling-check" value="1" class="user-selection">
+                                 Animado
+                            </label>
+                        </li>
+                        <li class="radio">
+                            <label>
+                                <input type="checkbox" name="feeling-check" value="2" class="user-selection">
+                                Humilhado
+                            </label>
+                        </li>
+                        <li class="radio">
+                            <label>
+                                <input type="checkbox" name="feeling-chec" class="user-selection" value="3">
+                                Exaltado
+                            </label>
+                        </li>
+                        <li class="radio">
+                            <label>
+                                <input type="checkbox" name="feeling-selection" class="user-selection" value="4">
+                                Amado
+                            </label>
+                        </li>
+                        <li class="radio">
+                    
+                            <input type="checkbox" name="feeling-selection" class="user-selection" value="5">
+                            Entusiasmado
+                        </li>
+                    </ul>
+                </div>
+            </div>
             <p>
                 <label for="desc" name="ndesc" id="idesc">Descreva sua experiencia positiva</label>
                 <textarea name="text" id="idesc" cols="30" rows="10"></textarea>
