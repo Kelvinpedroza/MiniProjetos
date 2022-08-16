@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Boas Vidrações</title>
+</head>
+<body>
+
+    <header><h1>Formulario de Boas Vidraçôes</h1></header>
+    <main>
+        <h3>Conte-nos algo positivo que aconteceu com você hoje </h3>
+
+        <form action="" method="get" autocomplete="on">
+
+            <div lass="label">
+                <label for="inome">Nome</label> 
+                <div class="fields">
+                    <input type="text" id="inome" name="nome" placeholder="Entre com seu Nome">
+                </div>
+            </div> 
+
+            <div class="labels">
+                <label for="iemail" id="iemail"> Email</label>
+                <div class="fields">
+                    <input type="email" name="iemail" id="iemail" placeholder="Entre com seu Email" required>
+                </div>
+
+            </div>
+            
+            <div class="labels">
+                <label for="irange" name="irange" id="irangee">Em uma escala de 1 a 10, quão bom foi ?</label>
+                <div class="fields">
+                   <input type="number" name="irange" id="irange" min="0" max="10">
+                </div>
+            </div>
+
+            <div class="form-rows">
+                <div class="labels">
+                    <label for="dropdown" id="dropdown-label">Onde isso aconteceu ?</label>                    
+                </div>
+                <div class="fields">
+                    <select name="Location of positive event" id="dropdown" class="dropdown">
+                        <option value="casa">Casa</option>
+                        <option value="comuni">Na comunidade</option>
+                        <option value="trabalho">No trabalho</option>
+                        <option value="rua">Nas ruas</option>
+                        <option value="outro">Outros</option>
+                    </select>
+                </div>
+            </div>
+
+           
+            <div class="labels">
+                <label for="ihome">Que Hora do dia Aconteceu ?</label>
+                <div class="fields">
+                    <ul id="time-of-day" style="list-style:none ;">
+                        <li class="radio">
+                            <label></label>
+                                <input name="time-radio" type="radio" value="1" class="user-selection">
+                                Manhã
+                            </label>
+                        </li>
+                        <li class="radio">
+                            <label>
+                                <input name="time-radio" type="radio" value="2" class="user-selection">
+                                Tarde
+                            </label>
+                        </li>
+                        <li class="radio">
+                            <label>
+                                <input name="time-radio" type="radio" value="3" class="user-selection">
+                                A noite 
+                            </label>
+                        </li>
+                  </ul>      
+                </div>
+            </div>
+
+           
+       
+
+            <p>
+                <label for="emotion" name="iemotion" id="iemotion">Que emoções você expreimentou? <br>(Selecione tudo que se aplica)</label>
+                <input type="checkbox" name="eanina" id="ianina"><label for="ianima">Animado</label>
+                <input type="checkbox" name="ehumi" id="ihumi"><label for="ihumi">Humilhado</label>
+                <input type="checkbox" name="exalt" id="iexalt"><label for="iexalt">Exaltado</label>
+                <input type="checkbox" name="elove" id="ilove"><label for="ilove">Amado</label>
+                <input type="checkbox" name="entus" id="ientus"><label for="ientus">Entusiasmado</label>
+            </p>
+            <p>
+                <label for="desc" name="ndesc" id="idesc">Descreva sua experiencia positiva</label>
+                <textarea name="text" id="idesc" cols="30" rows="10"></textarea>
+            </p>
+
+            <p>
+                <input type="submit" value="Enviar">
+            </p>
+
+
+
+            
+        </form>
+
+    </main>
+    
+    
+</body>
+</html>
