@@ -2,7 +2,7 @@
 
 *{
     margin: 0;
-    padding: 0;
+    padding: 0; 
 }
 
 header{
@@ -35,8 +35,8 @@ main > form{
     display: inline-block;
     text-align: right;
     width: 40%;
-    margin-bottom: 10px;
-    padding: 5px;
+    margin: 10px;
+    padding-bottom: 10px;
     vertical-align: top;
     margin-top: 10px;
 }
