@@ -11,9 +11,13 @@ header{
     font-weight: bold;
     font-size: 25px;
 }
+header h1 {
+    text-shadow: 1px 1px black;
+}
 
 body{
     background-color: #A9D7E9;
+
 }
 
 main {
@@ -21,12 +25,14 @@ main {
     background-color: #F3F3F3;
     padding: 20px 10px 10px 10px;
     border-radius: 20px;
-    width: 45vw;
-    height: 80vh;
+    width: 40vw;
+    height: 75vh;
+    box-shadow: 1px 1px 1px 1px  rgba(0, 0, 0, 0.39);
    
 }
 h3{
     text-align: center;
+    
 }
 main > form{
     
@@ -57,6 +63,11 @@ main > form{
     width: 48%;
     vertical-align: middle;
 }
+
+.position {
+    padding-top:20px ;
+    text-align: center;
+}
 .dropdown{
     height: 35px;
     width: 140px;
@@ -83,3 +94,50 @@ main form textarea {
 
     height: 50px;
 }
+
+.buttom {
+    padding-top: 30px;
+    text-align: center;
+}
+@media (max-width:833px) {
+    .master-div{
+        width: 70%;
+
+    }
+    .fields {
+        display: inline-block;
+        text-align: left;
+        width: 48%;
+        vertical-align:middle;
+    }
+    .input-fields {
+        width: 80%;
+    }
+    .dropdown {
+        width: 90%;
+    }
+    
+}
+@media (max-width: 520px) {
+    .master-div-style {
+      width: 80%;
+    }
+  
+    .fields {
+      width: 80%;
+      float: left;
+    }
+    .labels {
+      width: 100%;
+      text-align: left;
+    }
+  
+    .input-fields {
+      width: 100%;
+    }
+  
+    .dropdown {
+      width: 100%;
+    }
+  }
+  
